@@ -113,3 +113,56 @@
 ---
 
 ## 🏗️ Architecture technique
+
+
+### Stack technique
+| Couche | Technologie | Version |
+|--------|-------------|---------|
+| **Backend** | Flask / Python | 3.8+ / 3.0+ |
+| **Base de données** | MySQL / SQLite | 8.0+ / 3.x |
+| **ORM** | SQLAlchemy | 2.0+ |
+| **Data Processing** | Pandas / NumPy | 2.0+ / 1.24+ |
+| **Sécurité** | PyJWT / Bcrypt | 2.8+ / 4.0+ |
+| **Frontend** | HTML5 / CSS3 / JS | Natif |
+
+---
+
+## 🚀 Installation rapide
+
+### Prérequis
+- Python 3.8 ou supérieur
+- MySQL (optionnel, SQLite par défaut)
+- pip (gestionnaire de paquets)
+
+### Installation
+
+```bash
+# 1. Cloner le dépôt
+git clone https://github.com/yourusername/dataclean.git
+cd dataclean
+
+# 2. Créer l'environnement virtuel
+python -m venv venv
+
+# Activer l'environnement
+# Windows:
+venv\Scripts\activate
+# Linux/Mac:
+source venv/bin/activate
+
+# 3. Installer les dépendances
+pip install -r requirements.txt
+
+# 4. Configurer l'environnement
+cp .env.example .env
+# Éditer .env si nécessaire
+
+# 5. Initialiser la base de données
+# Option SQLite (défaut) - automatique
+python app.py
+
+# Option MySQL - importer le script SQL
+mysql -u root -p dataclean < database.sql
+
+# 6. Lancer l'application
+python app.py
