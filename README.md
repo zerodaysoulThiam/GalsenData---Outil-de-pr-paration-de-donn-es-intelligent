@@ -25,12 +25,8 @@
   </a>
   <br />
   <br />
-  <a href="https://vercel.com?utm\_source=github\_readme\_stats\_team\&utm\_campaign=oss">
-    <img src="./powered-by-vercel.svg"/>
-  </a>
+  
 </p>
-[![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 # DataClean — Flask
 
 Application de nettoyage intelligent de données CSV avec authentification JWT.
