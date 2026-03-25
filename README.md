@@ -30,8 +30,8 @@
 
 <div align="center">
   <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" width="120px" alt="DataClean Logo" />
-  <h1 style="font-size: 32px; margin: 10px 0;">🧹 DataClean Pro</h1>
-  <h3>✨ Intelligent CSV Data Cleansing Platform ✨</h3>
+  <h1 style="font-size: 32px; margin: 10px 0;">GalsenData</h1>
+  <h3> Intelligent CSV Data Cleansing Platform </h3>
   <p><strong>Transform messy data into actionable insights with enterprise-grade preprocessing</strong></p>
 </div>
 
