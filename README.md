@@ -67,28 +67,28 @@
 
 <p align="center">
   <a href="#-installation-rapide">
-    <img src="https://img.shields.io/badge/🚀-Installation-2d6a4f?style=for-the-badge"/>
+    <img src="https://img.shields.io/badge/-Installation-2d6a4f?style=for-the-badge"/>
   </a>
   <a href="#-documentation-api">
-    <img src="https://img.shields.io/badge/📚-API%20Docs-2d6a4f?style=for-the-badge"/>
+    <img src="https://img.shields.io/badge/-API%20Docs-2d6a4f?style=for-the-badge"/>
   </a>
   <a href="#-architecture">
-    <img src="https://img.shields.io/badge/🏗️-Architecture-2d6a4f?style=for-the-badge"/>
+    <img src="https://img.shields.io/badge/-Architecture-2d6a4f?style=for-the-badge"/>
   </a>
   <a href="#-déploiement">
-    <img src="https://img.shields.io/badge/🚢-Déploiement-2d6a4f?style=for-the-badge"/>
+    <img src="https://img.shields.io/badge/-Déploiement-2d6a4f?style=for-the-badge"/>
   </a>
 </p>
 
 ---
 
-## 📊 Statistiques du projet
+##  Statistiques du projet
 
 <p align="center">
-  <img src="https://img.shields.io/badge/📁%20Fichiers%20supportés-CSV%20%7C%20TSV%20%7C%20TXT-2d6a4f?style=flat-square"/>
-  <img src="https://img.shields.io/badge/📦%20Taille%20max-50%20MB-2d6a4f?style=flat-square"/>
-  <img src="https://img.shields.io/badge/⚡%20Performance-Chunking%20optimisé-2d6a4f?style=flat-square"/>
-  <img src="https://img.shields.io/badge/🔐%20Sécurité-JWT%20%2B%20Bcrypt-2d6a4f?style=flat-square"/>
+  <img src="https://img.shields.io/badge/%20Fichiers%20supportés-CSV%20%7C%20TSV%20%7C%20TXT-2d6a4f?style=flat-square"/>
+  <img src="https://img.shields.io/badge/%20Taille%20max-50%20MB-2d6a4f?style=flat-square"/>
+  <img src="https://img.shields.io/badge/%20Performance-Chunking%20optimisé-2d6a4f?style=flat-square"/>
+  <img src="https://img.shields.io/badge/%20Sécurité-JWT%20%2B%20Bcrypt-2d6a4f?style=flat-square"/>
 </p>
 
 
