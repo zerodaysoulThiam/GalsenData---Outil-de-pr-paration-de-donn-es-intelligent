@@ -1,4 +1,37 @@
 <div align="center">
+  <img src="https://res.cloudinary.com/anuraghazra/image/upload/v1594908242/logo_ccswme.svg" width="100px" alt="GitHub Readme Stats" />
+  <h1 style="font-size: 28px; margin: 10px 0;">GitHub Readme Stats</h1>
+  <p>Get dynamically generated GitHub stats on your READMEs!</p>
+</div>
+
+<p align="center">
+  <a href="https://github.com/anuraghazra/github-readme-stats/actions">
+    <img alt="Tests Passing" src="https://github.com/anuraghazra/github-readme-stats/workflows/Test/badge.svg" />
+  </a>
+  <a href="https://github.com/anuraghazra/github-readme-stats/graphs/contributors">
+    <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/anuraghazra/github-readme-stats" />
+  </a>
+  <a href="https://codecov.io/gh/anuraghazra/github-readme-stats">
+    <img alt="Tests Coverage" src="https://codecov.io/gh/anuraghazra/github-readme-stats/branch/master/graph/badge.svg" />
+  </a>
+  <a href="https://github.com/anuraghazra/github-readme-stats/issues">
+    <img alt="Issues" src="https://img.shields.io/github/issues/anuraghazra/github-readme-stats?color=0088ff" />
+  </a>
+  <a href="https://github.com/anuraghazra/github-readme-stats/pulls">
+    <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/anuraghazra/github-readme-stats?color=0088ff" />
+  </a>
+  <a href="https://securityscorecards.dev/viewer/?uri=github.com/anuraghazra/github-readme-stats">
+    <img alt="OpenSSF Scorecard" src="https://api.securityscorecards.dev/projects/github.com/anuraghazra/github-readme-stats/badge" />
+  </a>
+  <br />
+  <br />
+  <a href="https://vercel.com?utm\_source=github\_readme\_stats\_team\&utm\_campaign=oss">
+    <img src="./powered-by-vercel.svg"/>
+  </a>
+</p>
+
+
+<div align="center">
   <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" width="120px" alt="DataClean Logo" />
   <h1 style="font-size: 32px; margin: 10px 0;">🧹 DataClean Pro</h1>
   <h3>✨ Intelligent CSV Data Cleansing Platform ✨</h3>
@@ -61,108 +94,68 @@
   <img src="https://img.shields.io/badge/🔐%20Sécurité-JWT%20%2B%20Bcrypt-2d6a4f?style=flat-square"/>
 </p>
 
----
 
-## 🎯 À propos
+# DataClean — Flask
 
-**DataClean Pro** est une application web professionnelle qui automatise le nettoyage et le prétraitement des données CSV. Conçue pour les data scientists, analystes et chercheurs, elle réduit de **85%** le temps consacré à la préparation des données.
-
-### 💡 Problématique résolue
-> *"Dans le monde de la data science, 80% du temps est consacré au nettoyage des données. DataClean Pro réduit ce temps de 90% en automatisant les tâches répétitives de prétraitement."*
-
-### 👥 Public cible
-- 🧪 **Data Scientists** & **Analystes**
-- 🎓 **Étudiants** en data science
-- 🔬 **Équipes de recherche**
-- 🏢 **PME** & **Startups**
-
----
-
-## ✨ Fonctionnalités phares
-
-### 🔐 Authentification sécurisée
-| Fonctionnalité | Description |
-|----------------|-------------|
-| **JWT Tokens** | Authentification sans état avec expiration |
-| **Bcrypt** | Hachage sécurisé des mots de passe |
-| **Rôles** | Admin / User avec permissions granulaires |
-| **Sessions** | Gestion des sessions actives |
-| **Reset Password** | Réinitialisation par token |
-
-### 📊 Nettoyage intelligent
-| Traitement | Méthodes disponibles |
-|------------|---------------------|
-| **Valeurs manquantes** | Suppression / Moyenne / Médiane / Mode |
-| **Doublons** | Détection et suppression automatique |
-| **Outliers** | IQR (Interquartile) / Z-Score (σ > 3) |
-| **Normalisation** | Min-Max [0,1] / Z-Score (centrée réduite) |
-
-### 📈 Analyse exploratoire
-- 🔍 **Statistiques descriptives** par colonne
-- 🏷️ **Détection automatique** des types (numérique/texte)
-- 📊 **Visualisation** des taux de valeurs manquantes
-- 🔢 **Comptage** des valeurs uniques
-- ⚠️ **Détection** des outliers
-
-### 🚀 Performance
-- ⚡ **Chunking** pour fichiers volumineux
-- 🐼 **Pandas optimisé** avec NumPy
-- 📁 **Support** jusqu'à 50MB
-- 💾 **Export CSV** optimisé
-
----
-
-## 🏗️ Architecture technique
-
-
-### Stack technique
-| Couche | Technologie | Version |
-|--------|-------------|---------|
-| **Backend** | Flask / Python | 3.8+ / 3.0+ |
-| **Base de données** | MySQL / SQLite | 8.0+ / 3.x |
-| **ORM** | SQLAlchemy | 2.0+ |
-| **Data Processing** | Pandas / NumPy | 2.0+ / 1.24+ |
-| **Sécurité** | PyJWT / Bcrypt | 2.8+ / 4.0+ |
-| **Frontend** | HTML5 / CSS3 / JS | Natif |
-
----
-
-## 🚀 Installation rapide
-
-### Prérequis
-- Python 3.8 ou supérieur
-- MySQL (optionnel, SQLite par défaut)
-- pip (gestionnaire de paquets)
-
-### Installation
+Application de nettoyage intelligent de données CSV avec authentification JWT.
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
+## Installation rapide
 
 ```bash
-# 1. Cloner le dépôt
-git clone https://github.com/yourusername/dataclean.git
-cd dataclean
+# 1. Cloner ou dézipper le projet
+cd securafrik_flask
 
-# 2. Créer l'environnement virtuel
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
+# 2. Créer un environnement virtuel
 python -m venv venv
-
-# Activer l'environnement
-# Windows:
-venv\Scripts\activate
-# Linux/Mac:
-source venv/bin/activate
+source venv/bin/activate   # Windows : venv\Scripts\activate
 
 # 3. Installer les dépendances
 pip install -r requirements.txt
 
 # 4. Configurer l'environnement
 cp .env.example .env
-# Éditer .env si nécessaire
+# Modifier .env si besoin (SQLite par défaut, aucune config requise)
 
-# 5. Initialiser la base de données
-# Option SQLite (défaut) - automatique
+# 5. Lancer
 python app.py
+```
 
-# Option MySQL - importer le script SQL
-mysql -u root -p dataclean < database.sql
+Ouvrir http://localhost:5000
 
-# 6. Lancer l'application
-python app.py
+## Compte de test (créé automatiquement)
+
+Inscrivez-vous via la page de connexion. Les tables sont créées automatiquement au démarrage.
+
+## Configuration base de données
+
+- **SQLite** (défaut) : rien à faire, le fichier `instance/dataclean.db` est créé automatiquement.
+- **MySQL** : mettre `DB_ENGINE=mysql` dans `.env` et remplir les variables `DB_*`.
+
+## Architecture
+
+| Fichier | Rôle |
+|---|---|
+| `app.py` | Routes Flask, logique auth, API REST |
+| `database.py` | Modèles SQLAlchemy (User, Session, Job, AuthSession) |
+| `processor.py` | Moteur de nettoyage Pandas |
+| `templates/login.html` | Page connexion / inscription |
+| `templates/index.html` | Application principale |
+
+## API
+
+| Méthode | Route | Auth | Description |
+|---|---|---|---|
+| POST | `/api/auth/register` | ✗ | Inscription |
+| POST | `/api/auth/login` | ✗ | Connexion → token JWT |
+| POST | `/api/auth/logout` | ✓ | Déconnexion |
+| GET | `/api/auth/me` | ✓ | Utilisateur courant |
+| POST | `/api/upload` | ✓ | Upload CSV |
+| POST | `/api/process` | ✓ | Lancer le nettoyage |
+| GET | `/api/download/<job_id>` | ✓ | Télécharger le CSV nettoyé |
+| GET | `/api/history` | ✓ | Historique des sessions |
+| GET | `/api/stats` | ✓ | Statistiques |
+
+![Status](https://img.shields.io/badge/Project-Completed-success?style=for-the-badge)
+![Level](https://img.shields.io/badge/Level-Intermediate%20%2F%20Advanced-black?style=for-the-badge)
