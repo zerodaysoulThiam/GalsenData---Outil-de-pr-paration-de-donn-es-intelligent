@@ -22,6 +22,55 @@ load_dotenv()
 
 from database import db, User, Session as DBSession, ProcessingJob, AuthSession, PasswordResetToken
 
+# À ajouter après les imports, avant la création de l'app
+import os
+
+# Détecter si on est sur Render
+IS_RENDER = os.environ.get('RENDER', False)
+
+# ─── App ───
+app = Flask(__name__)
+app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'dataclean-secret-2024')
+app.config['JWT_SECRET_KEY'] = os.environ.get('JWT_SECRET_KEY', 'dataclean-jwt-secret-2024')
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.config['MAX_CONTENT_LENGTH'] = int(os.environ.get('MAX_CONTENT_LENGTH', 50 * 1024 * 1024))
+
+# ─── Configuration des uploads pour Render ───
+if IS_RENDER:
+    # Sur Render, utiliser /tmp pour les uploads
+    app.config['UPLOAD_FOLDER'] = '/tmp/uploads'
+else:
+    app.config['UPLOAD_FOLDER'] = os.path.join(os.path.dirname(__file__), 'uploads')
+os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
+
+# ─── DB : SQLite pour Render, SQLite ou MySQL pour local ───
+_db_engine = os.environ.get('DB_ENGINE', 'sqlite').lower()
+
+if _db_engine == 'mysql' and not IS_RENDER:
+    # MySQL seulement en local
+    app.config['SQLALCHEMY_DATABASE_URI'] = (
+        f"mysql+pymysql://{os.environ.get('DB_USER', 'root')}:"
+        f"{os.environ.get('DB_PASSWORD', '')}@"
+        f"{os.environ.get('DB_HOST', 'localhost')}:"
+        f"{os.environ.get('DB_PORT', '3306')}/"
+        f"{os.environ.get('DB_NAME', 'dataclean')}?charset=utf8mb4"
+    )
+else:
+    # SQLite par défaut (pour Render et local)
+    _sqlite_dir = os.path.join(os.path.dirname(__file__), 'instance')
+    os.makedirs(_sqlite_dir, exist_ok=True)
+    app.config['SQLALCHEMY_DATABASE_URI'] = f"sqlite:///{os.path.join(_sqlite_dir, 'dataclean.db')}"
+
+ALLOWED_EXTENSIONS = {'csv', 'tsv', 'txt'}
+
+db.init_app(app)
+
+# CORS - accepter les requêtes de Render
+CORS(app, origins=['http://localhost:5000', 'http://127.0.0.1:5000', 'https://*.onrender.com'], supports_credentials=True)
+
+# ─── Créer les tables au démarrage ───
+with app.app_context():
+    db.create_all()
 # ─── App ───
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'dataclean-secret-2024')
